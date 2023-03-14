@@ -1,3 +1,11 @@
+const URL = "https://640e5d534ed25579dc32f737.mockapi.io/week12project/api/SongName"
+function getMusic(){
+    let data=$.get(URL)
+    console.log(data);
+    return data
+}
+    getMusic()
+    
 const songs = [
     {
         id: 0,
@@ -134,4 +142,4 @@ function moveSongUp(songPlaylistId) {
     song.order = previousSong.order - 1
     renderPlaylist()
 }
-const URL = “https://640e5d534ed25579dc32f737.mockapi.io/week12project/api/:endpoint”
+// const URL = “https://640e5d534ed25579dc32f737.mockapi.io/week12project/api/:endpoint”
